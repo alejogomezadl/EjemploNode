@@ -3,10 +3,10 @@ const express = require('express');
 const app = express();
 
 const routesUser = require("./routes/usuarios")
-
+const routesMonitoreo = require("./routes/monitoreo")
 
 app.use("/usuarios", routesUser)
-
+app.use("/monitoreo",routesMonitoreo)
 
 
 const server = app.listen(3000, () =>{
