@@ -24,8 +24,4 @@ console.log("nombre:", req.query.Nombre)
 
 
 
-
-
-
-
 module.exports= routes

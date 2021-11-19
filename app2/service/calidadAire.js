@@ -3,7 +3,10 @@ const calcular = (maxPM10, actualPM10,maxPM30, actualPM30) => {
     let porcentajePM10 = porcentaje(maxPM10,actualPM10);
     let porcentajePM30 = porcentaje(maxPM30,actualPM30);
 
-    return { porcentajePM10, porcentajePM30 }
+    return {
+         porcentajePM10, 
+         porcentajePM30 
+        }
 }
 
 

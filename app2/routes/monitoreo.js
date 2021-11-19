@@ -2,7 +2,8 @@ const express = require("express");
 
 const routes = express.Router();
 
-const monitoreoService = require("../service/calidadAire")
+const monitoreoService = require("../service/calidadAire");
+const { get, post, put } = require("./usuarios");
 
 routes.route("/porcentajes").get((req, resp, next) => {
 
@@ -19,4 +20,16 @@ routes.route("/porcentajes").get((req, resp, next) => {
 })
 
 
+routes.route("/guardar").post((req, resp, next) => {
+
+      console.log(req.body.responsable);
+
+    resp.json(req.body)
+
+})
+
+
+
+
 module.exports = routes
+
