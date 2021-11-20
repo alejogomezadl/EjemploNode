@@ -20,6 +20,7 @@ routes.route("/porcentajes").get((req, resp, next) => {
 })
 
 
+
 routes.route("/guardar").post((req, resp, next) => {
 
       console.log(req.body.responsable);
